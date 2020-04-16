@@ -1,0 +1,56 @@
+信息系统与数据库技术练习7答题卡
+
+班级：     信息管理2班
+姓名：     张适
+学号：     20190307222
+
+注：请将答案放置在序号下方。*/
+
+（一）
+1.
+use Companys
+
+
+2.
+INSERT Employee(Eid,Ename)
+VALUES('G101','张太华')
+
+
+3.
+
+INSERT Employee(Eid,Ename,Esex,EBirth)
+VALUES('SG01','许世芳',0,'1996-07-08')
+
+
+4.
+INSERT Employee(Eid,Ename ,Esex,Bonus,BasePay)
+VALUES('SG02','秦英俊',1,3212.45,4567.23),
+('SG03','刘桂兰',0,3001.76,2345.78),
+('SG04','伍陆齐',1,3426.23,3452.96)
+
+
+5.
+DELETE Employee
+WHERE Bonus<=3426.23 AND Esex=0
+
+
+6.
+ALTER TABLE Department
+ADD area Decimal(10,2) NOT NULL
+
+7.
+ALTER TABLE Department
+ALTER COLUMN Dname VARCHAR(20)
+
+8.
+ALTER TABLE Department
+DROP COLUMN Manager
+
+9.
+EXEC sp_rename 'Department.area',areas
+
+10.
+EXEC sp_help Department
+
+11.
+DROP TABLE Department
